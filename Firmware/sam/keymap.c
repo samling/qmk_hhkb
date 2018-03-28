@@ -25,12 +25,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      |-------+---+---+---+---+---+---+---+---+---+---+-------+-----+-------+---|
 
             |------+------+-----------------------+------+------|
-            | LGUI | LAlt | ******* Space ******* | RAlt | RGUI |
+            | LAlt | LGUI | ******* Space ******* | RGUI | RAlt |
             |------+------+-----------------------+------+------|
     */
 
     /* CUSTOMIZATIONS:
-        - GUI and ALT keys swapped to behave better when using across both Windows and Mac
+        - Fn1 added on TAB (hold to engage, tap to send regular TAB)
     */
 
   [BASE] = KEYMAP(  //  default layer

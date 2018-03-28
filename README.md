@@ -9,6 +9,9 @@
 3. `sudo dfu-programmer atmega32u4 flash hhkb_sam.hex`
 4. `sudo dfu-programmer atmega32u4 reset`
 
+## To Change Boot Options
+1. Hold `BOOTMAGIC_KEY_SALT` (Spacebar) + LAlt while plugging in to swap LAlt and LGUI (make sure to hold for a second while the board boots)
+
 ## To Debug
 1. Run `./hid_listen.mac` from the `Tools` folder
 2. Enter any of the following debug commands with `Magic` + key; `Magic` is `LShift` + `RShift`:
