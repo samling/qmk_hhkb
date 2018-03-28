@@ -10,7 +10,8 @@
 4. `sudo dfu-programmer atmega32u4 reset`
 
 ## To Change Boot Options
-1. Hold `BOOTMAGIC_KEY_SALT` (Spacebar) + LAlt while plugging in to swap LAlt and LGUI (make sure to hold for a second while the board boots)
+1. Hold `BOOTMAGIC_KEY_SALT` (Spacebar) + `LAlt` (Option) while plugging in to swap LAlt and LGUI (make sure to hold for a second while the board boots)
+2. Hold `BOOTMAGIC_KEY_SALT` (Spacebar) + `LGUI` (Super) while plugging in to disable super (Windows) key, e.g. for gaming
 
 ## To Debug
 1. Run `./hid_listen.mac` from the `Tools` folder
