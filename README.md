@@ -10,7 +10,7 @@
 
 ## To Debug
 1. Run `./hid_listen.mac` from the `Tools` folder
-2. Enter any of the following debug commands with `Magic` _+ key; `Magic` is `LShift` + `RShift`:
+2. Enter any of the following debug commands with `Magic` + key; `Magic` is `LShift` + `RShift`:
 ```
 c:      enter console mode
 d:      toggle debug enable
