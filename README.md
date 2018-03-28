@@ -1,6 +1,6 @@
 ## To Compile
 1. Copy or link `Firmware/sam` folder to `qmk_firmware/keyboards/hhkb/keymaps/sam`
-2. Copy or link `rules.mk` to `qmk_firmware/keyboards/hhkb/rules.mk`
+2. Copy or link `Firmware/rules.mk` to `qmk_firmware/keyboards/hhkb/rules.mk`
 3. From `qmk_firmware` root folder, run `make hhkb:sam`
 
 ## To Flash
