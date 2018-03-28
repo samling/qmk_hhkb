@@ -69,15 +69,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
     /* Layer SAM: SAM custom mode (HHKB Tab)
-      |------+-----+-----+-----+----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
-      |      |     |     |     |    |    |    |    |     |     |     |     |       |       |NUMLK|
-      |------+-----+-----+-----+----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
-      |(N/A) |     |     |     |    |    |    |    |     |NUM_7|NUM_8|NUM_9|       |       |     |
-      |------+-----+-----+-----+----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
-      |      |     |     |     |    |    |    |    |     |NUM_4|NUM_5|NUM_6|       |       |     |
-      |------+-----+-----+-----+----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
-      |      |     |     |     |    |    |    |    |NUM_1|NUM_2|NUM_3|     |       |       |     |
-      |------+-----+-----+-----+----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
+      |------+-----+-----+-----+-----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
+      |      |     |     |     |     |    |    |    |     |     |     |     |       |       |NUMLK|
+      |------+-----+-----+-----+-----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
+      |(N/A) |     |     |     |     |    |    |    |     |NUM_7|NUM_8|NUM_9|       |       |     |
+      |------+-----+-----+-----+-----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
+      |      |     |     |     |     |    |    |    |     |NUM_4|NUM_5|NUM_6|       |       |     |
+      |------+-----+-----+-----+-----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
+      |      |     |     |     |     |    |    |    |NUM_1|NUM_2|NUM_3|     |       |       |     |
+      |------+-----+-----+-----+-----+----+----+----+-----+-----+-----+-----+-------+-------+-----|
 
                  |------+------+----------------------+------+------+
                  | **** | **** | ******************** |NUM_0 |NUM_. |
@@ -90,10 +90,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
 
   [SAM] = KEYMAP(
-  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_NUMLOCK, \
-  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    KC_TRNS,  KC_TRNS,              \
-  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,                        \
-  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,  KC_TRNS,                        \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_NUMLOCK, \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    KC_TRNS,  KC_TRNS,              \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,                        \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,  KC_TRNS,                        \
                         KC_TRNS, KC_TRNS,            KC_TRNS,                KC_P0, KC_PDOT)};
 
 const uint16_t PROGMEM fn_actions[] = {

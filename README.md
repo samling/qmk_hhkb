@@ -1,6 +1,7 @@
 ## To Compile
 1. Copy or link `Firmware/sam` folder to `qmk_firmware/keyboards/hhkb/keymaps/sam`
-2. From `qmk_firmware` root folder, run `make hhkb:sam`
+2. Copy or link `rules.mk` to `qmk_firmware/keyboards/hhkb/rules.mk`
+3. From `qmk_firmware` root folder, run `make hhkb:sam`
 
 ## To Flash
 1. Plug Hasu-modded HHKB in and press reset button under back cover
