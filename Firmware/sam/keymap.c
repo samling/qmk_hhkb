@@ -15,6 +15,7 @@ enum custom_keycodes {
     TMUX_PREV,
     TMUX_NEXT,
     TMUX_RENAME_TAB,
+    TMUX_RENUM_TAB,
     TMUX_NEW_TAB,
     TMUX_SPLIT_PANE,
     TMUX_KILL_PANE,
@@ -109,10 +110,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
 
   [SAM] = KEYMAP(
-  KC_TRNS,  TMUX_W1,  TMUX_W2,         TMUX_W3,           TMUX_W4,           TMUX_W5,          TMUX_W6,  TMUX_W7,  TMUX_W8,  TMUX_W9,  TMUX_W0,  KC_TRNS,         KC_TRNS,          KC_TRNS,  KC_NUMLOCK, \
-  KC_TRNS,  KC_TRNS,  TMUX_KILL_PANE,  KC_TRNS,           TMUX_RENAME_TAB,   TMUX_NEW_TAB,     KC_TRNS,  KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    TMUX_PREV,       TMUX_NEXT,        KC_TRNS,              \
-  KC_TRNS,  KC_TRNS,  KC_TRNS,         TMUX_SPLIT_PANE,   KC_TRNS,           KC_TRNS,          KC_TRNS,  KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,         KC_TRNS,                                \
-  KC_TRNS,  KC_TRNS,  KC_TRNS,         KC_TRNS,           KC_TRNS,           KC_TRNS,          KC_TRNS,  KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,         KC_TRNS,                                \
+  KC_TRNS,  TMUX_W1,  TMUX_W2,         TMUX_W3,           TMUX_W4,           TMUX_W5,          TMUX_W6,         TMUX_W7,  TMUX_W8,  TMUX_W9,  TMUX_W0,  KC_TRNS,         KC_TRNS,          KC_TRNS,  KC_NUMLOCK, \
+  KC_TRNS,  KC_TRNS,  TMUX_KILL_PANE,  KC_TRNS,           TMUX_RENAME_TAB,   TMUX_NEW_TAB,     KC_TRNS,         KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    TMUX_PREV,       TMUX_NEXT,        KC_TRNS,              \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,         TMUX_SPLIT_PANE,   KC_TRNS,           KC_TRNS,          KC_TRNS,         KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,         KC_TRNS,                                \
+  KC_TRNS,  KC_TRNS,  KC_TRNS,         KC_TRNS,           KC_TRNS,           KC_TRNS,          TMUX_RENUM_TAB,  KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,         KC_TRNS,                                \
                                     KC_TRNS, KC_TRNS,            KC_TRNS,                KC_P0, KC_PDOT)};
 
 const uint16_t PROGMEM fn_actions[] = {
@@ -141,6 +142,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             case TMUX_RENAME_TAB:  // C-b R
                 SEND_STRING(TMUX_PREFIX SS_DOWN(X_LSHIFT) SS_TAP(X_R) SS_UP(X_LSHIFT));
+                return false;
+            case TMUX_RENUM_TAB:  // C-b R
+                SEND_STRING(TMUX_PREFIX SS_DOWN(X_LSHIFT) SS_TAP(X_N) SS_UP(X_LSHIFT));
                 return false;
             case TMUX_NEW_TAB:     // C-b T
                 SEND_STRING(TMUX_PREFIX SS_DOWN(X_LSHIFT) SS_TAP(X_T) SS_UP(X_LSHIFT));
